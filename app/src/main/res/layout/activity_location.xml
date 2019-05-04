@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.krashunt.krashunt2.LocationActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_grey_border_bottom"
+
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+
+            android:background="#fff"
+            android:onClick="backloc"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Location"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp"
+
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            />
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:id="@+id/frame1"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="100dp"
+      android:layout_marginRight="8dp"
+      android:layout_marginLeft="8dp"
+      >
+    <Button
+        android:id="@+id/hongkong"
+
+        android:background="@drawable/shape1"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hong Kong"
+        android:onClick="hk"
+        />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:id="@+id/tick1"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:elevation="100dp"
+        android:src="@drawable/ic_check_black_24dp"
+        />
+  </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frame2"
+        android:layout_below="@+id/frame1"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        >
+    <Button
+        android:id="@+id/india"
+
+
+        android:background="@drawable/shape1"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="India"
+        android:onClick="in"
+        />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:id="@+id/tick2"
+        android:elevation="100dp"
+        android:src="@drawable/ic_check_black_24dp"
+        />
+    </FrameLayout>
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_marginTop="50dp"
+        android:alpha="0.5"
+        android:background="@drawable/shape"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/frame2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:enabled= "false"
+        android:onClick="submit"
+        />
+
+
+</RelativeLayout>

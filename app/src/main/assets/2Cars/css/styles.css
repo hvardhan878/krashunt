@@ -1,0 +1,177 @@
+/*
+ * Stylesheet for the 2 Cars page
+ */
+
+@font-face {
+    font-family: penultimate;
+    src: url(../fonts/Existence-UnicaseLight.otf);
+}
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+
+     margin: 0;
+       padding: 0;
+
+   }
+}
+
+html {
+    touch-action: manipulation;
+    height:100%
+
+
+}
+
+#myCanvas {
+    display: block;
+
+   position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 70px;
+    font-family: penultimate, sans-serif;
+    color: #FFFEFD;
+}
+
+#time {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 70px;
+    font-family: penultimate, sans-serif;
+    color: #FFFEFD;
+}
+
+#black {
+    z-index: 2000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000000;
+    opacity: 0;
+    display: block;
+    transition: opacity 0.5s ease;
+}
+
+#initial {
+    z-index: 1000;
+    position: absolute;
+      overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000000;
+    color: #FFFFFF;
+    opacity: 0;
+    display: none;
+    transition: opacity 0.5s ease;
+}
+
+.visible {
+    opacity: 0.8 !important;
+    transition: opacity 0.5s ease;
+}
+
+#first {
+    width: 450px;
+    font-size: 160px;
+    margin: 30px auto 0;
+    font-family: penultimate, sans-serif;
+}
+
+#start {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 45px auto 0;
+    cursor: pointer;
+}
+
+#howto {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 40px;
+    font-family: penultimate, sans-serif;
+}
+
+#final {
+    z-index: 1000;
+    position: absolute;
+    left: 0;
+    top: 0;
+         overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background: #000000;
+    color: #FFFFFF;
+    opacity: 0;
+    display: none;
+    transition: opacity 0.5s ease;
+}
+
+#last {
+    width: 300px;
+    font-size: 40px;
+        text-align: center;
+    margin: 30px auto 0;
+    font-family: penultimate, sans-serif;
+}
+
+#scores {
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px auto 0;
+    font-family: penultimate, sans-serif;
+}
+
+#replay {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 45px auto 0;
+    cursor: pointer;
+}
+
+.music {
+    display: none;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    left: 20px;
+    z-index: 5000;
+    cursor: pointer;
+}
+
+.sound {
+    display: none;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 5000;
+    cursor: pointer;
+}

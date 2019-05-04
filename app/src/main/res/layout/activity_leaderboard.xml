@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.krashunt.krashunt2.Leaderboard">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/relLayoutTopBar"
+        android:layout_alignParentTop="true">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_grey_border_bottom"
+
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"
+
+                android:background="#fff"
+                android:onClick="backproduct"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leaderboard"
+                android:textSize="22sp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary"
+                />
+
+
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/leaderlist"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"
+        android:layout_marginLeft="6dp"
+
+        android:layout_marginTop="58dp"
+        android:layout_gravity="right"
+        ></ListView>
+
+</RelativeLayout>

@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.krashunt.krashunt2.Game">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="@drawable/white_grey_border_bottom"
+
+        >
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="9"
+
+
+
+
+            android:orientation="horizontal"
+           >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/shape3"
+                android:layout_marginRight="4dp"
+
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Best Score:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp"
+            android:textStyle="bold"
+
+
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:textSize="10sp"
+            android:text="0"
+            android:id="@+id/userscore"
+
+
+            />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="3"
+                android:layout_marginRight="4dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@drawable/shape3"
+                >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Highest Score Now:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp"
+            android:textStyle="bold"
+
+
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+
+            android:text="0"
+            android:textSize="10sp"
+
+            android:id="@+id/bestscore"
+
+            />
+                </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/shape3"
+
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+
+            android:layout_marginRight="4dp"
+
+            android:orientation="horizontal"
+            android:gravity="center_vertical|center_horizontal"
+
+
+
+            >
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="8dp"
+                android:id="@+id/imagecoin"
+
+                android:background="@drawable/krashcoin"
+                android:layout_marginRight="4dp"
+
+                android:layout_alignParentLeft="true"
+
+                android:layout_centerVertical="true"
+
+
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="10sp"
+                android:id="@+id/coins"
+
+
+
+
+                android:layout_toRightOf="@+id/imagecoin"
+
+
+
+
+
+
+                android:text="0"
+                />
+
+
+        </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <im.delight.android.webview.AdvancedWebView
+        android:id="@+id/webview"
+       android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+  </RelativeLayout>

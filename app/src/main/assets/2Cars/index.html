@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"  initial-scale=1">
+    <meta name="author" content="Harish Kandala & Goutham K Reddy">
+    <meta name="description" content="2 Cars is a minimal endless game">
+    <meta name="keywords" content="2 Cars, Game, Endless Game">
+
+
+    <title>2 Cars</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-----------------------------Stylesheets---------------------------->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-------------------------------------------------------------------->
+</head>
+<body>
+    <div id="score">0</div>
+    <div id="time">00:00</div>
+
+    <div id="black" class="visible"></div>
+
+    <div id="initial">
+        <div id="howto">Collect the circles and avoid the squares </div>
+
+        <img id="start" src="img/play.png">
+
+    </div>
+
+    <div id="final">
+        <div id="last">GAME OVER</div>
+        <div id="scores">SCORES:</div>
+        <img id="replay" src="img/restart.png">
+    </div>
+
+    <img src="img/music-on.png" class="music" id="music-on">
+    <img src="img/music-off.png" class="music" id="music-off">
+    <img src="img/sound-on.png" class="sound" id="sound-on">
+    <img src="img/sound-off.png" class="sound" id="sound-off">
+
+    <audio id="music" loop>
+        <source src="audio/greyhound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="pop1" preload="auto">
+        <source src="audio/pop1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="pop2" preload="auto">
+        <source src="audio/pop2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="pop3" preload="auto">
+        <source src="audio/pop3.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <canvas id="myCanvas"  style='position:absolute; left:0px; top:0px;'>
+        Your browser doesn't support HTML5 Canvas.
+    </canvas>
+
+<!--------------------------Scripts--------------------------------->
+<script src="js/app.js" type="text/javascript"></script>
+<!------------------------------------------------------------------>
+</body>
+</html>

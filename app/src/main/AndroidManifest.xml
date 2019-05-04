@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.krashunt.krashunt2">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- Recommended permissions to receive brand‐centric ads with interactive functionality for better eCPMs -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/krashcarlogo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"
+            tools:replace="android:value" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Required Activity for rendering ads in the embedded browser -->
+        <activity
+            android:name="com.inmobi.rendering.InMobiAdActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize|screenLayout"
+            android:hardwareAccelerated="true"
+            android:resizeableActivity="false"
+            android:theme="@android:style/Theme.NoTitleBar"
+            tools:ignore="UnusedAttribute" />
+
+        <!-- Required for Google Play Services -->
+
+        <activity
+            android:name="com.krashunt.krashunt2.LoginActivity"
+            android:icon="@drawable/krashcarlogo"
+            android:label="Krashunt"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="com.krashunt.krashunt2.Game"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.krashunt.krashunt2.profileactivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.krashunt.krashunt2.ProductDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.krashunt.krashunt2.WelcomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.krashunt.krashunt2.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.krashunt.krashunt2.Leaderboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.krashunt.krashunt2.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.krashunt.krashunt2.MainActivity"
+            android:label="@string/title_activity_main2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.krashunt.krashunt2.terms"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.krashunt.krashunt2.ContactActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+
+                <data android:scheme="mailto" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.krashunt.krashunt2.ShareActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.krashunt.krashunt2.LocationActivity">
+
+
+        </activity>
+    </application>
+
+</manifest>

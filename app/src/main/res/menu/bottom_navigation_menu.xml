@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ic_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        />
+
+    <item
+        android:id="@+id/ic_share"
+        android:icon="@drawable/ic_menu_share"
+        android:title="Get Coins"
+        />
+    <item
+        android:id="@+id/ic_work"
+        android:icon="@drawable/ic_menu_slideshow"
+        android:title="How it Works"
+        />
+    <item
+        android:id="@+id/ic_profile"
+        android:icon="@drawable/ic_person"
+        android:title="Profile"
+        />
+
+
+
+</menu>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sharebg"
+    tools:context="com.krashunt.krashunt2.ShareActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/relLayoutTopBar"
+        android:layout_alignParentTop="true"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_grey_border_bottom"
+
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"
+
+                android:background="#fff"
+                android:onClick="backhome"
+
+                />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/shape3"
+
+
+               android:layout_gravity="right"
+
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal"
+
+
+
+                >
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imagecoin"
+
+                    android:background="@drawable/krashcoin"
+                    android:layout_marginRight="4dp"
+
+                    android:layout_alignParentLeft="true"
+
+                    android:layout_centerVertical="true"
+
+
+
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:id="@+id/coins"
+
+
+
+                    android:layout_toRightOf="@+id/imagecoin"
+
+
+
+
+
+
+                    android:text="0"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:layout_gravity="center_horizontal"
+
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="50dp"
+        android:paddingTop="12dp"
+        android:text="Invite a friend and get 100 coins"
+        android:textSize="16dp"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:background="@drawable/shape1"
+
+
+        android:onClick="invite"
+        android:paddingBottom="12dp"
+        />
+
+
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+
+
+        android:layout_marginTop="20dp"
+        android:paddingTop="12dp"
+        android:text="Like us on Facebook to get 100 coins"
+        android:textSize="16dp"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:background="@drawable/shape1"
+
+
+        android:onClick="like"
+        android:paddingBottom="12dp"
+        />
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+
+
+        android:layout_marginTop="20dp"
+        android:paddingTop="12dp"
+        android:text="Follow us on Insta to get 100 coins"
+        android:textSize="16dp"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:background="@drawable/shape1"
+
+
+        android:onClick="follow"
+        android:paddingBottom="12dp"
+        />
+
+
+
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+
+        android:id="@+id/about"
+        android:layout_marginTop="20dp"
+        android:paddingTop="12dp"
+        android:text="Watch an ad to get 50 coins"
+        android:textSize="16dp"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:background="@drawable/shape1"
+
+
+        android:onClick="watchad"
+        android:paddingBottom="12dp"
+        />
+
+
+
+
+
+</LinearLayout>

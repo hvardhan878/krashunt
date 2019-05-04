@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+
+
+        >
+        <ss.com.bannerslider.views.BannerSlider
+            android:id="@+id/banner_slider1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:interval="3000"
+            app:defaultIndicators="circle"
+            app:emptyView="@layout/emptyview"
+            />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
